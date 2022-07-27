@@ -107,7 +107,7 @@ export default function Home(results) {
             <Character characters={characters} />
           )}
 
-          <HStack spacing="auto" justify="center" mt={10}>
+          <HStack spacing="40" justify="center" mt={10}>
             <Box w="40px" h="40px">
               {prevIndex != null && search == "" ? (
                 <Button colorScheme="linkedin" onClick={handlePrevButton}>

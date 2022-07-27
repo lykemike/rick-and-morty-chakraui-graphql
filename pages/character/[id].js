@@ -140,7 +140,7 @@ export default function Character(results) {
                           <Tr key={ep.id}>
                             <Td>{ep.air_date}</Td>
                             <Td>
-                              {ep.episode} - {ep.name}
+                              {ep.episode} <br /> {ep.name}
                             </Td>
                           </Tr>
                         ))}
