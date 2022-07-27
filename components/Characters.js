@@ -20,9 +20,9 @@ const Character = ({ characters }) => {
           statusName = "⚫";
         }
         return (
-          <Link href={`character/${character.id}`}>
+          <Link href={`character/${character.id}`} key={character.id}>
             <a>
-              <div className="cursor-pointer" key={character.id}>
+              <div className="cursor-pointer">
                 <Image className="rounded-md" src={character.image} width={300} height={300} />
 
                 <Heading as="h4" align="center" size="md">
