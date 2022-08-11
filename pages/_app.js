@@ -4,11 +4,13 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Footer>
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </Footer>
+    <div className="min-h-screen antialiased bg-blur-gradient">
+      <Footer>
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </Footer>
+    </div>
   );
 }
 

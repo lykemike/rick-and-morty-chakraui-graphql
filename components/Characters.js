@@ -5,7 +5,7 @@ import React from "react";
 
 const Character = ({ characters }) => {
   return (
-    <SimpleGrid columns={[1, 2, 3]} spacing="40px">
+    <SimpleGrid columns={[1, 2, 4]} spacing="40px">
       {characters.map((character) => {
         let statusColor = "";
         let statusName = "";
@@ -23,7 +23,14 @@ const Character = ({ characters }) => {
           <Link href={`character/${character.id}`} key={character.id}>
             <a>
               <div className="cursor-pointer">
-                <Image className="rounded-md" src={character.image} width={300} height={300} />
+                <Image
+                  className="rounded-md"
+                  alt={character.image}
+                  src={character.image}
+                  width={300}
+                  height={300}
+                  priority={false}
+                />
 
                 <Heading as="h4" align="center" size="md">
                   {character.name}

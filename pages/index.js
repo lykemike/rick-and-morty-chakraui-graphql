@@ -110,14 +110,14 @@ export default function Home(results) {
           <HStack spacing="40" justify="center" mt={10}>
             <Box w="40px" h="40px">
               {prevIndex != null && search == "" ? (
-                <Button colorScheme="linkedin" onClick={handlePrevButton}>
+                <Button colorScheme="yellow" onClick={handlePrevButton}>
                   PREV
                 </Button>
               ) : null}
             </Box>
             <Box w="40px" h="40px">
               {nextIndex != null && search == "" ? (
-                <Button colorScheme="linkedin" onClick={handleNextButton}>
+                <Button colorScheme="yellow" onClick={handleNextButton}>
                   NEXT
                 </Button>
               ) : null}

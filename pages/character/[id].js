@@ -156,7 +156,7 @@ export default function Character(results) {
                   rounded={"md"}
                   w={"80"}
                   mt={8}
-                  colorScheme="linkedin"
+                  colorScheme="yellow"
                   textTransform={"uppercase"}
                   _hover={{
                     transform: "translateY(2px)",

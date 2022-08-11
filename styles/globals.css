@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-blur-gradient {
+    @apply bg-neutral-100;
+  
+    background: radial-gradient(circle at bottom center, #12c2e9, transparent 30%),
+      radial-gradient(circle at bottom left, #c471ed, transparent 80%),
+      radial-gradient(circle at right, #f64f59, transparent 40%), rgb(245 245 245);
+  }
